@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Profile Card Styles */
+        .profile-card {
+            background-color: #ffffff;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Profile Info Styles */
+        .profile-info {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        /* Profile Picture Styles */
+        .profile-picture {
+            margin-right: 15px;
+        }
+
+        .profile-picture img {
+            width: 100px;
+            /* Adjust size as needed */
+            height: 100px;
+            /* Adjust size as needed */
+            border-radius: 50%;
+            /* Makes the image round */
+        }
+
+        /* User Info Styles */
+        .info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h3 {
+            margin: 5px 0;
+            color: #333;
+        }
+
+        p {
+            margin: 0 0 15px;
+            color: #666;
+        }
+
+        /* Actions Button */
+        .actions {
+            text-align: center;
+        }
+
+        #edit-profile {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #edit-profile:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-card">
+        <h2>User Profile</h2>
+        <div class="profile-info">
+            <div class="profile-picture">
+                <img src="profile-placeholder.png" alt="Profile Picture" id="profile-picture">
+            </div>
+            <div class="info">
+                <h3>Name:</h3>
+                <p id="name">{{name}}</p>
+
+                <h3>Email:</h3>
+                <p id="email">{{email}}</p>
+
+                <h3>Phone Number:</h3>
+                <p id="phone">{{phone}}</p>
+            </div>
+        </div>
+        <div class="actions">
+            <button id="edit-profile">Edit Profile</button>
+        </div>
+    </div>
+</body>
+
+</html>
